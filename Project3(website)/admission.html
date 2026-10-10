@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GCET Jammu - Admission</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<h2>GCET Jammu</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="faculty.html">Faculty</a>
+<a href="students.html">Students</a>
+<a href="gallery.html">Photo Gallery</a>
+<a href="admission.html">Admission</a>
+</div>
+</nav>
+<section class="page">
+<h1>Student Admission Form</h1>
+<form onsubmit="alert('Admission form submitted successfully!'); return false;">
+<label>Name</label>
+<input type="text" name="name">
+<label>Email</label>
+<input type="email" name="email">
+<label>Date of Birth</label>
+<input type="date" name="dob">
+<label>Mobile Number</label>
+<input type="tel" name="mobile">
+<label>Gender</label>
+<div class="inline">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+</div>
+<label>Course</label>
+<select name="course">
+<option>B.Tech Computer Science</option>
+<option>B.Tech Electronics</option>
+<option>B.Tech Civil</option>
+<option>B.Tech Mechanical</option>
+<option>B.Tech Electrical</option>
+</select>
+<label>Hobbies</label>
+<div class="inline">
+<label><input type="checkbox"> Reading</label>
+<label><input type="checkbox"> Sports</label>
+<label><input type="checkbox"> Music</label>
+</div>
+<label>Address</label>
+<textarea rows="5"></textarea>
+<div class="form-buttons">
+<input class="button" type="submit" value="Submit">
+<input class="button" type="reset" value="Reset">
+</div>
+</form>
+</section>
+<footer>
+<p>GCET Jammu | Student Admission</p>
+</footer>
+</body>
+</html>

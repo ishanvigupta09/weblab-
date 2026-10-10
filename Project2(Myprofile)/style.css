@@ -1,0 +1,45 @@
+body{
+    background-color:lavenderblush;
+}
+
+h1{
+    color:red;
+}
+
+p{
+    color:black;
+}
+
+    h2{
+        color:orange;
+    }
+#college{
+    border:2px solid black;
+}
+#college{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    border-radius:50%;
+}
+
+table,th,td{
+    border-color: brown;
+}
+table,th,td{
+    background-color:lavender;
+}
+img{
+    width:200px;
+    height:200px;
+    border:2px solid black;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+h3{
+    color:blue;
+}
+
+

@@ -1,0 +1,744 @@
+/* ===== BASIC SETTINGS ===== */
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#fff4e6;
+color:#333;
+line-height:1.6;
+}
+
+/* ===== COLLEGE HEADER ===== */
+/* Top section with college logo and name */
+.college-header{
+background:#C19A6B;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+padding:15px;
+text-align:center;              
+}
+
+/* College logo */
+.college-header img{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:50%;
+}
+
+/* College name */
+.college-header h1{
+font-size:30px;
+color:#8b1e2d;
+margin:0;
+max-width:650px;
+}
+
+/* Autonomous College text */
+.college-header p{
+font-size:18px;
+margin:3px 0 0;
+font-weight:bold;
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav{
+background:#7b4b3a;
+color:white;
+padding:12px 25px;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+/* Left side of navbar */
+.nav-left{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+/* Small navbar logo */
+.nav-left img{
+width:35px;
+height:35px;
+object-fit:contain;
+}
+
+/* GCET Jammu text */
+.nav-left span{
+font-weight:bold;
+}
+
+/* Navigation links */
+.nav-links{
+display:flex;
+align-items:center;
+gap:5px;
+}
+
+/* All navbar links */
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+padding:8px 10px;
+}
+
+/* Navbar link hover */
+nav a:hover{
+color:#ffd6d6;
+}
+
+/* ===== STUDENT LOGIN BUTTON ===== */
+.login-button{
+background:#7b4b3a;
+border:1px solid white;
+border-radius:5px;
+color:white;
+padding:8px 15px;
+text-decoration:none;
+margin-left:auto;
+}
+
+/* Login button hover */
+.login-button:hover{
+background:white;
+color:#8b1e2d;
+}
+
+/* ===== HERO SECTION ===== */
+/* Main welcome section of homepage */
+.hero{
+min-height:430px;
+padding:60px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+background:#ffe8d6;
+}
+
+/* Hero content width */
+.hero div{
+max-width:600px;
+}
+
+/* Hero heading */
+.hero h1{
+font-size:40px;
+color:#7b4b3a;
+margin-bottom:15px;
+}
+
+/* Hero paragraph */
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+/* Image inside hero section */
+.hero img{
+width:380px;
+max-width:100%;
+border:6px solid white;
+border-radius:18px;
+box-shadow:0 8px 25px #c9b5a5;
+}
+
+/* ===== GENERAL BUTTON ===== */
+.button{
+display:inline-block;
+background:#7b4b3a;
+color:white;
+padding:12px 24px;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* Button hover */
+.button:hover{
+background:#5e382c;
+}
+
+/* ===== ABOUT / WELCOME / GENERAL PAGE ===== */
+.about,.welcome,.page{
+width:86%;
+max-width:1100px;
+margin:40px auto;
+padding:35px;
+background:#fffdf9;
+border:1px solid #ead8c8;
+border-radius:12px;
+box-shadow:0 4px 15px #e0d0c0;
+}
+
+/* Section headings */
+.about h2,.welcome h2,.page h1{
+color:#6b2737;
+margin-bottom:15px;
+text-align:center;
+}
+
+/* Section paragraphs */
+.about p,.welcome p{
+color:#6b2737;
+}
+
+/* ===== FACULTY SECTION ===== */
+.faculty-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+/* Faculty card */
+.card{
+padding:20px;
+background:#fff8f0;
+border:1px solid #ead8c8;
+border-radius:12px;
+text-align:center;
+}
+
+/* Faculty card hover */
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px #d8c5b5;
+}
+
+/* Faculty image */
+.card img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:12px;
+}
+
+/* ===== PHOTO GALLERY ===== */
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+/* Gallery images */
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+border:4px solid #7b4b3a;
+box-shadow:0 4px 12px #cfc0b5;
+}
+
+/* Gallery image hover */
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+/* ===== GENERAL TABLE ===== */
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+/* Table cells */
+th,td{
+border:1px solid #c9b5a5;
+padding:14px;
+text-align:center;
+}
+
+/* Table heading */
+th{
+background:#7b4b3a;
+color:white;
+}
+
+/* Alternate table rows */
+tr:nth-child(even){
+background:#fff8f0;
+}
+
+/* ===== ADMISSION FORM ===== */
+form{
+max-width:700px;
+margin:auto;
+}
+
+/* Form labels */
+form label{
+display:block;
+font-weight:bold;
+margin-top:15px;
+}
+
+/* Text fields, email, date, mobile, select and textarea */
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=tel],
+select,
+textarea{
+width:100%;
+padding:12px;
+border:1px solid #c9b5a5;
+border-radius:6px;
+font-size:16px;
+}
+
+/* Radio buttons and checkboxes */
+.inline{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.inline label{
+font-weight:normal;
+}
+
+/* Submit and reset buttons */
+.form-buttons{
+margin-top:25px;
+display:flex;
+gap:15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:#7b4b3a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-page{
+min-height:600px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4dddd;
+padding:40px;
+}
+
+/* Login box */
+.login-box{
+width:400px;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 8px 25px #cdb8b8;
+}
+
+/* Login heading */
+.login-box h1{
+text-align:center;
+color:#8b1e2d;
+margin-bottom:8px;
+}
+
+/* Login paragraph */
+.login-box p{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* Login labels */
+.login-box label{
+display:block;
+font-weight:bold;
+margin:15px 0 5px;
+}
+
+/* Username and password fields */
+.login-box input[type=text],
+.login-box input[type=password]{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:15px;
+}
+
+/* Remember me */
+.remember{
+display:flex;
+align-items:center;
+gap:8px;
+margin:15px 0;
+}
+
+.remember label{
+margin:0;
+font-weight:normal;
+}
+
+/* Login button inside login box */
+.login-box .login-button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:5px;
+background:#8b1e2d;
+color:white;
+font-size:16px;
+cursor:pointer;
+margin:0;
+}
+
+/* Login button hover */
+.login-box .login-button:hover{
+background:#651520;
+}
+
+/* Forgot password */
+.forgot{
+color:#8b1e2d;
+font-size:14px;
+}
+
+/* ===== OLD STUDENT DASHBOARD ===== */
+.dashboard{
+width:90%;
+max-width:1100px;
+margin:40px auto;
+}
+
+/* Dashboard heading */
+.dashboard h1{
+color:#8b1e2d;
+margin-bottom:5px;
+}
+
+/* Dashboard cards layout */
+.dashboard-cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:30px;
+}
+
+/* Individual dashboard card */
+.dashboard-card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 4px 15px #ddd;
+border-top:5px solid #8b1e2d;
+}
+
+/* Dashboard card heading */
+.dashboard-card h2{
+color:#8b1e2d;
+margin-bottom:10px;
+}
+
+/* Dashboard card link */
+.dashboard-card a{
+display:inline-block;
+margin-top:15px;
+background:#8b1e2d;
+color:white;
+padding:8px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* Dashboard card link hover */
+.dashboard-card a:hover{
+background:#651520;
+}
+
+/* ===== PORTAL SECTION ===== */
+.portal-section{
+background:white;
+padding:30px;
+margin-top:35px;
+border-radius:10px;
+box-shadow:0 4px 15px #ddd;
+}
+
+/* Portal headings */
+.portal-section h1,
+.portal-section h2{
+color:#8b1e2d;
+margin-bottom:20px;
+}
+
+/* Portal table */
+.portal-section table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+/* Portal table cells */
+.portal-section th,
+.portal-section td{
+border:1px solid #ddd;
+padding:12px;
+text-align:left;
+}
+
+/* Portal table heading */
+.portal-section th{
+width:30%;
+background:#f4dddd;
+color:#8b1e2d;
+}
+
+/* ===== PROFILE PAGE ===== */
+.profile-page{
+max-width:1100px;
+margin:40px auto;
+}
+
+/* Profile heading */
+.profile-page h1{
+text-align:center;
+color:#8b1e2d;
+margin-bottom:30px;
+}
+
+/* Profile box */
+.profile-box{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 4px 15px #ddd;
+display:flex;
+align-items:center;
+gap:40px;
+}
+
+/* Profile image */
+.profile-box img{
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+}
+
+/* Profile name */
+.profile-box h2{
+color:#8b1e2d;
+margin-bottom:15px;
+}
+
+/* Profile information */
+.profile-box p{
+margin:8px 0;
+}
+
+/* ===== RESULT SUMMARY ===== */
+.result-summary{
+margin-top:30px;
+padding:25px;
+background:#f4dddd;
+border-radius:8px;
+text-align:center;
+}
+
+/* Result heading */
+.result-summary h2{
+color:#8b1e2d;
+margin-bottom:10px;
+}
+
+/* Result paragraph */
+.result-summary p{
+margin:5px;
+}
+
+/* ===== STUDENT PORTAL DASHBOARD ===== */
+
+.portal-layout{
+display:flex;
+min-height:600px;
+background:#fff4e6;
+}
+
+.sidebar{
+width:230px;
+background:#7b4b3a;
+padding:25px 15px;
+color:white;
+}
+
+.sidebar h2{
+text-align:center;
+}
+
+.sidebar p{
+text-align:center;
+margin-bottom:25px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:12px;
+margin:5px 0;
+border-radius:5px;
+}
+
+.sidebar a:hover{
+background:#6b3f31;
+}
+
+.portal-main{
+flex:1;
+padding:35px;
+}
+
+.portal-header{
+margin-bottom:30px;
+}
+
+.portal-header h1{
+color:#7b4b3a;
+}
+
+.portal-cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.portal-card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 4px 15px #ddd;
+border-top:5px solid #7b4b3a;
+}
+
+.portal-card h2{
+color:#7b4b3a;
+}
+
+.portal-card a{
+display:inline-block;
+margin-top:15px;
+background:#7b4b3a;
+color:white;
+padding:8px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.portal-card a:hover{
+background:#5e382c;
+}
+
+.portal-content{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:25px;
+}
+
+.portal-content .portal-section{
+margin-top:30px;
+}
+
+.portal-content ul{
+padding-left:20px;
+}
+
+.portal-content li{
+padding:10px 0;
+border-bottom:1px solid #ddd;
+}
+
+/* ===== MOBILE / RESPONSIVE DESIGN ===== */
+/* These styles apply when screen width is 768px or smaller */
+
+@media(max-width:768px){
+
+/* Mobile navbar */
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+/* Mobile navigation links */
+.nav-links{
+margin-left:0;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* Mobile login button */
+.login-button{
+margin-left:0;
+}
+
+/* Mobile hero */
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+/* Smaller hero heading */
+.hero h1{
+font-size:30px;
+}
+
+/* Faculty cards become one column */
+.faculty-grid{
+grid-template-columns:1fr;
+}
+
+/* Gallery becomes one column */
+.gallery{
+grid-template-columns:1fr;
+}
+
+/* Smaller content sections */
+.about,.welcome,.page{
+width:92%;
+padding:22px;
+}
+
+/* Dashboard cards become one column */
+.dashboard-cards{
+grid-template-columns:1fr;
+}
+
+/* Profile becomes vertical */
+.profile-box{
+flex-direction:column;
+text-align:center;
+}
+
+/* Portal becomes vertical */
+.portal-layout{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+}
+
+.portal-cards{
+grid-template-columns:1fr;
+}
+
+.portal-content{
+grid-template-columns:1fr;
+}
+
+}
