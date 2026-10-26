@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ShopEase</title>
+    <!-- Website stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Website JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- ================= NAVIGATION BAR ================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+        <div class="nav-actions">
+            <button
+                id="darkModeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+            <a href="products.html#cart" class="cart-link">
+                🛍️ Cart <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+    <!-- ================= CONTACT PAGE INTRO ================= -->
+    <section class="offer-banner">
+        <div class="offer-content">
+            <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU ♡</p>
+            <h1>Let's Talk, Lovely!</h1>
+            <p>
+                Have a question, need help, or just want to say hello?
+                Send us a message. We're happy to help!
+            </p>
+        </div>
+    </section>
+    <!-- ================= CONTACT SECTION ================= -->
+    <main class="section-padding">
+        <div class="section-heading">
+            <p class="eyebrow">HERE FOR YOU</p>
+            <h2>Get in Touch</h2>
+            <p>
+                Fill out the form below and let us know how we can help.
+            </p>
+        </div>
+        <div class="contact-layout">
+            <!-- CONTACT INFORMATION -->
+            <section class="contact-info">
+                <h2>Contact Information ♡</h2>
+                <p>
+                    We love helping our customers find their
+                    perfect little something.
+                </p>
+                <div class="contact-detail">
+                    <span>💌</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@shopease.example</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <span>📞</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <span>🎀</span>
+                    <div>
+                        <h3>Our Promise</h3>
+                        <p>Kindness, care, and lovely customer service.</p>
+                    </div>
+                </div>
+                <div class="contact-decoration">
+                    🌸 &nbsp; Made with love, just for you. &nbsp; 🌸
+                </div>
+            </section>
+            <!-- CONTACT FORM -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <p>All fields marked with * are required.</p>
+                <form id="contactForm">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            minlength="2"
+                            autocomplete="name"
+                            required>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9+\-\s()]{7,20}"
+                            title="Enter a valid phone number using digits and optional +, spaces, hyphens, or parentheses."
+                            autocomplete="tel"
+                            required>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select
+                            id="subject"
+                            name="subject"
+                            required>
+                            <option value="">Choose a subject</option>
+                            <option value="Product Question">Product Question</option>
+                            <option value="Order Support">Order Support</option>
+                            <option value="Return or Exchange">Return or Exchange</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            minlength="10"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <!-- Form Buttons -->
+                    <div class="form-buttons">
+                        <button
+                            type="submit"
+                            class="btn">
+                            Send Message ♡
+                        </button>
+                        <button
+                            type="reset"
+                            class="btn btn-outline">
+                            Reset Form
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+                <p>
+                    Your little corner for fashion, beauty,
+                    accessories and all things lovely.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <p>Follow our little world of lovely things.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopEase. Made with ♡.</p>
+        </div>
+    </footer>
+</body>
+</html>

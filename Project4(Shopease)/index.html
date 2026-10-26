@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEase Coquette Girl Edition — discover fashion, beauty, accessories and cute tech.">
+    <title>ShopEase | Coquette Girl Edition</title>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- ================= NAVIGATION BAR ================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <!-- Dark mode button -->
+        <div class="nav-actions">
+            <button
+                id="darkModeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Toggle dark mode">
+                🌙
+            </button>
+            <!-- Shopping cart -->
+            <a href="products.html#cart" class="cart-link">
+                🛍️ Cart <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">♡ YOUR LITTLE WORLD OF LOVELY THINGS ♡</p>
+                <h1>A Little More Lovely Every Day.</h1>
+                <p>
+                    From dreamy perfumes and pretty handbags to cozy sweaters
+                    and cute gadgets, discover little things that make you smile.
+                </p>
+                <a href="products.html" class="btn">Shop Now ♡</a>
+            </div>
+            <!-- Hero image -->
+            <div class="hero-image">
+                <img
+                    src="images/hero.jpeg"
+                    alt="Romantic pink coquette fashion and beauty collection">
+            </div>
+        </section>
+        <!-- ================= BENEFITS SECTION ================= -->
+        <section class="benefits">
+            <div class="benefit">
+                <span>🎀</span>
+                <h3>Curated with Love</h3>
+                <p>Lovely finds picked just for you.</p>
+            </div>
+            <div class="benefit">
+                <span>💗</span>
+                <h3>Everyday Elegance</h3>
+                <p>Little luxuries for your everyday life.</p>
+            </div>
+            <div class="benefit">
+                <span>✨</span>
+                <h3>Your Style, Your Story</h3>
+                <p>Find pieces that feel like you.</p>
+            </div>
+        </section>
+        <!-- ================= FEATURED PRODUCTS ================= -->
+        <section class="featured section-padding" id="featured">
+            <div class="section-heading">
+                <p class="eyebrow">HANDPICKED FOR YOU</p>
+                <h2>Our Lovely Picks</h2>
+                <p>Meet a few of our current favorites. ♡</p>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1: Perfume -->
+                <article class="product-card">
+                    <img
+                        src="images/perfume.png"
+                        alt="Elegant perfume bottle"
+                        loading="lazy">
+                    <div class="product-info">
+                        <p class="product-category">Beauty</p>
+                        <h3>Rosé Dream Perfume</h3>
+                        <p class="product-price">₹1,499</p>
+                        <button
+                            class="btn add-to-cart"
+                            type="button"
+                            data-name="Rosé Dream Perfume"
+                            data-price="1499">
+                            Add to Cart ♡
+                        </button>
+                    </div>
+                </article>
+                <!-- Product 2: Handbag -->
+                <article class="product-card">
+                    <img
+                        src="images/handbag.png"
+                        alt="Pretty blush pink handbag"
+                        loading="lazy">
+                    <div class="product-info">
+                        <p class="product-category">Bags & Accessories</p>
+                        <h3>Blush Bow Handbag</h3>
+                        <p class="product-price">₹1,899</p>
+                        <button
+                            class="btn add-to-cart"
+                            type="button"
+                            data-name="Blush Bow Handbag"
+                            data-price="1899">
+                            Add to Cart ♡
+                        </button>
+                    </div>
+                </article>
+                <!-- Product 3: Sweater -->
+                <article class="product-card">
+                    <img
+                        src="images/sweater.png"
+                        alt="Soft pink knitted sweater"
+                        loading="lazy">
+                    <div class="product-info">
+                        <p class="product-category">Fashion</p>
+                        <h3>Cozy Rose Sweater</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button
+                            class="btn add-to-cart"
+                            type="button"
+                            data-name="Cozy Rose Sweater"
+                            data-price="1299">
+                            Add to Cart ♡
+                        </button>
+                    </div>
+                </article>
+                <!-- Product 4: Digital camera -->
+                <article class="product-card">
+                    <img
+                        src="images/digicam.png"
+                        alt="Cute digital camera"
+                        loading="lazy">
+                    <div class="product-info">
+                        <p class="product-category">Tech & Gadgets</p>
+                        <h3>Retro Pink Digicam</h3>
+                        <p class="product-price">₹4,999</p>
+                        <button
+                            class="btn add-to-cart"
+                            type="button"
+                            data-name="Retro Pink Digicam"
+                            data-price="4999">
+                            Add to Cart ♡
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <div class="section-button">
+                <a href="products.html" class="btn btn-outline">
+                    Explore All Products →
+                </a>
+            </div>
+        </section>
+        <!-- ================= CATEGORIES SECTION ================= -->
+        <section class="categories section-padding" id="categories">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR FAVORITES</p>
+                <h2>Shop by Category</h2>
+                <p>A little something for every mood. 🎀</p>
+            </div>
+            <div class="category-grid">
+                <!-- Beauty -->
+                <a href="products.html?category=beauty" class="category-card">
+                    <img
+                        src="images/perfume.png"
+                        alt="Perfume and beauty products"
+                        loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Beauty</h3>
+                        <p>Perfume & Blush</p>
+                    </div>
+                </a>
+                <!-- Fashion -->
+                <a href="products.html?category=fashion" class="category-card">
+                    <img
+                        src="images/sweater.png"
+                        alt="Cozy feminine fashion"
+                        loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Fashion</h3>
+                        <p>Sweaters, Jeans & Heels</p>
+                    </div>
+                </a>
+                <!-- Bags and accessories -->
+                <a href="products.html?category=accessories" class="category-card">
+                    <img
+                        src="images/handbag.png"
+                        alt="Blush pink handbag"
+                        loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Bags & Accessories</h3>
+                        <p>Handbags & Smartwatches</p>
+                    </div>
+                </a>
+                <!-- Technology -->
+                <a href="products.html?category=tech" class="category-card">
+                    <img
+                        src="images/digicam.png"
+                        alt="Digital camera and cute gadgets"
+                        loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Tech & Gadgets</h3>
+                        <p>Digicams & Headphones</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- ================= PROMOTIONAL BANNER ================= -->
+        <section class="offer-banner">
+            <div class="offer-content">
+                <p class="eyebrow">A LITTLE TREAT FOR YOU</p>
+                <h2>Romanticize Your Everyday.</h2>
+                <p>
+                    Discover pretty things, express your style,
+                    and make every day feel a little more special.
+                </p>
+                <a href="products.html" class="btn">Find Your Favorites ♡</a>
+            </div>
+        </section>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+                <p>
+                    Your little corner for fashion, beauty,
+                    accessories and all things lovely.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <p>Follow our little world of lovely things.</p>
+                <!-- Replace # with your real social media profile links -->
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 ShopEase. Made with ♡ for lovely everyday moments.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="nav-actions">
+            <button
+                id="darkModeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode">
+                🌙
+            </button>
+            <a href="#cart" class="cart-link">
+                🛍️ Cart <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+    <!-- PAGE INTRODUCTION -->
+    <section class="offer-banner">
+        <div class="offer-content">
+            <p class="eyebrow">YOUR LITTLE SHOP OF LOVELY THINGS</p>
+            <h1>Find Your Pretty Things ♡</h1>
+            <p>
+                From dreamy beauty finds to cute gadgets and
+                feminine fashion, find something you love.
+            </p>
+        </div>
+    </section>
+    <!-- PRODUCTS SECTION -->
+    <main class="section-padding">
+        <div class="section-heading">
+            <p class="eyebrow">MADE FOR YOUR EVERYDAY MAGIC</p>
+            <h2>Our Collection</h2>
+            <p>Pick your favorites and add a little loveliness to your day.</p>
+        </div>
+        <!-- SEARCH AND CATEGORY FILTER -->
+        <div class="shop-controls">
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search your favorites..."
+                aria-label="Search products">
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All Categories</option>
+                <option value="beauty">Beauty</option>
+                <option value="fashion">Fashion</option>
+                <option value="accessories">Bags & Accessories</option>
+                <option value="tech">Tech & Gadgets</option>
+            </select>
+        </div>
+        <!-- PRODUCT GRID -->
+        <div class="product-grid" id="productGrid">
+            <!-- 1. PERFUME -->
+            <article class="product-card"
+                data-name="Rose Dream Perfume"
+                data-price="1499"
+                data-category="beauty"
+                data-description="A dreamy fragrance for your everyday moments.">
+                <img src="images/perfume.png"
+                     alt="Rose Dream perfume"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Beauty</p>
+                    <h3>Rosé Dream Perfume</h3>
+                    <p class="product-description">A dreamy everyday fragrance.</p>
+                    <p class="product-price">₹1,499</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Rosé Dream Perfume"
+                        data-price="1499">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 2. HANDBAG -->
+            <article class="product-card"
+                data-name="Blush Bow Handbag"
+                data-price="1899"
+                data-category="accessories"
+                data-description="A pretty handbag to complete your look.">
+                <img src="images/handbag.png"
+                     alt="Blush pink handbag"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Bags & Accessories</p>
+                    <h3>Blush Bow Handbag</h3>
+                    <p class="product-description">A sweet everyday statement piece.</p>
+                    <p class="product-price">₹1,899</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Blush Bow Handbag"
+                        data-price="1899">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 3. SWEATER -->
+            <article class="product-card"
+                data-name="Cozy Rose Sweater"
+                data-price="1299"
+                data-category="fashion"
+                data-description="A soft and cozy sweater for your wardrobe.">
+                <img src="images/sweater.png"
+                     alt="Pink knitted sweater"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Fashion</p>
+                    <h3>Cozy Rose Sweater</h3>
+                    <p class="product-description">Soft, cozy and effortlessly cute.</p>
+                    <p class="product-price">₹1,299</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Cozy Rose Sweater"
+                        data-price="1299">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 4. DIGICAM -->
+            <article class="product-card"
+                data-name="Retro Pink Digicam"
+                data-price="4999"
+                data-category="tech"
+                data-description="A cute digital camera for capturing everyday memories.">
+                <img src="images/digicam.png"
+                     alt="Pink digital camera"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Tech & Gadgets</p>
+                    <h3>Retro Pink Digicam</h3>
+                    <p class="product-description">Capture your favorite memories.</p>
+                    <p class="product-price">₹4,999</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Retro Pink Digicam"
+                        data-price="4999">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 5. SMARTWATCH -->
+            <article class="product-card"
+                data-name="Rose Gold Smartwatch"
+                data-price="2999"
+                data-category="accessories"
+                data-description="A stylish smartwatch for your daily routine.">
+                <img src="images/smartwatch.png"
+                     alt="Rose gold smartwatch"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Bags & Accessories</p>
+                    <h3>Rose Gold Smartwatch</h3>
+                    <p class="product-description">Smart features with a chic look.</p>
+                    <p class="product-price">₹2,999</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Rose Gold Smartwatch"
+                        data-price="2999">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 6. HEADPHONES -->
+            <article class="product-card"
+                data-name="Pink Wireless Headphones"
+                data-price="1999"
+                data-category="tech"
+                data-description="Cute wireless headphones for music and everyday listening.">
+                <img src="images/headphones.png"
+                     alt="Pink wireless headphones"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Tech & Gadgets</p>
+                    <h3>Pink Wireless Headphones</h3>
+                    <p class="product-description">Your music, your mood.</p>
+                    <p class="product-price">₹1,999</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Pink Wireless Headphones"
+                        data-price="1999">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 7. HEELS -->
+            <article class="product-card"
+                data-name="Blush Dream Heels"
+                data-price="2299"
+                data-category="fashion"
+                data-description="Elegant blush heels for special occasions and stylish outfits.">
+                <img src="images/heels.png"
+                     alt="Blush pink high heels"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Fashion</p>
+                    <h3>Blush Dream Heels</h3>
+                    <p class="product-description">A little extra elegance.</p>
+                    <p class="product-price">₹2,299</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Blush Dream Heels"
+                        data-price="2299">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 8. JEANS -->
+            <article class="product-card"
+                data-name="Everyday Blue Jeans"
+                data-price="1599"
+                data-category="fashion"
+                data-description="Versatile blue jeans that pair with your everyday outfits.">
+                <img src="images/jeans.png"
+                     alt="Light blue jeans"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Fashion</p>
+                    <h3>Everyday Blue Jeans</h3>
+                    <p class="product-description">Your new everyday favorite.</p>
+                    <p class="product-price">₹1,599</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Everyday Blue Jeans"
+                        data-price="1599">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+            <!-- 9. BLUSH MAKEUP -->
+            <article class="product-card"
+                data-name="Petal Pink Blush"
+                data-price="799"
+                data-category="beauty"
+                data-description="A pretty pink blush for a soft, rosy makeup look.">
+                <img src="images/blush.png"
+                     alt="Pink blush makeup compact"
+                     loading="lazy">
+                <div class="product-info">
+                    <p class="product-category">Beauty</p>
+                    <h3>Petal Pink Blush</h3>
+                    <p class="product-description">A soft rosy touch for your look.</p>
+                    <p class="product-price">₹799</p>
+                    <button class="btn view-details" type="button">
+                        View Details
+                    </button>
+                    <button class="btn add-to-cart"
+                        type="button"
+                        data-name="Petal Pink Blush"
+                        data-price="799">
+                        Add to Cart ♡
+                    </button>
+                </div>
+            </article>
+        </div>
+        <!-- EMPTY SEARCH MESSAGE -->
+        <p id="noProductsMessage" hidden>
+            No products found. Try another search. ♡
+        </p>
+        <!-- CART SUMMARY -->
+        <section class="cart-section" id="cart">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR LITTLE COLLECTION</p>
+                <h2>Your Shopping Cart 🛍️</h2>
+                <p>Everything you love, gathered in one place.</p>
+            </div>
+            <div id="cartItems">
+                <p>Your cart is waiting for something lovely. ♡</p>
+            </div>
+            <p class="cart-total">
+                Total: <span id="cartTotal">₹0</span>
+            </p>
+            <button id="clearCart" class="btn btn-outline" type="button">
+                Clear Cart
+            </button>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ShopEase<span> ♡</span></a>
+                <p>Your little corner for fashion, beauty and lovely things.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <p>Follow our little world of lovely things.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopEase. Made with ♡.</p>
+        </div>
+    </footer>
+</body>
+</html>
